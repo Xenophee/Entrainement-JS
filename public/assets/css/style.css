@@ -1,0 +1,38 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+}
+
+body {
+    background-image: url(/public/assets/img/tri407.jpg);
+    padding-top: 10vh;
+}
+
+nav {
+    background-color: #f1f1e7;
+}
+
+.exo {
+    background-color: #f39a9d;
+}
+
+.answerExo {
+    background-color: #f1f1e7;
+}
+
+
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+input[type=password]:focus {
+    border-color: #f39a9d;
+    box-shadow: 0 0 7px #f39a9d;
+}
+
+#send {
+    background-color: #f39a9d;
+}
+
