@@ -10,10 +10,24 @@ body {
 
 nav {
     background-color: #f1f1e7;
+    border-bottom-style : double;
+    border-bottom-width: 10px;
+    border-color: #6e6964;
+}
+
+.welcome {
+    background-color: #f39a9d;
+    border-color: #f1f1e7;
+    border-style: double;
+    border-width: 10px;
 }
 
 .exo {
     background-color: #f39a9d;
+    border-top: double;
+    border-bottom: double;
+    border-color: #f1f1e7;
+    border-width: 10px;
 }
 
 .answerExo {
@@ -27,7 +41,7 @@ h1, h2 {
     font-weight: bold;
 }
 
-input[type=password]:focus {
+input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
     border-color: #f39a9d;
     box-shadow: 0 0 7px #f39a9d;
 }
@@ -36,3 +50,16 @@ input[type=password]:focus {
     background-color: #f39a9d;
 }
 
+
+
+/* Classes spécifiques d'exercices */
+
+.good {
+    border-color:  green;
+    box-shadow: 0 0 7px green;
+}
+
+.wrong {
+    border-color:  red;
+    box-shadow: 0 0 7px red;
+}

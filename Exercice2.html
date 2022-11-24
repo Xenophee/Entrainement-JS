@@ -54,6 +54,33 @@
                 <p>Créer un formulaire demandant à l'utilisateur son nom, son prénom, son email et son age.</p>
                 <p>Si les champs ne correspondent pas à une regex, afficher un message d'erreur en rouge sous le champs dès que l'on entre une valeur.</p>
             </div>
+
+            <!-- Mise en page de l'exercice -->
+            <div class="row d-flex justify-content-center py-5">
+                <div class="answerExo col-9 col-lg-6 py-5 px-5 shadow-lg">
+                    <h2 class="text-center pb-5">Formulaire</h2>
+                    <!-- formulaire  -->
+                <form class="row d-flex justify-content-center">
+                    <div class="mb-3">
+                      <label for="lastname" class="form-label">Nom :</label>
+                      <input type="text" class="form-control" id="lastname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Prénom :</label>
+                        <input type="text" class="form-control" id="firstname">
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email :</label>
+                        <input type="email" class="form-control" id="email">
+                      </div>
+                      <div class="mb-3">
+                        <label for="age" class="form-label">Age :</label>
+                        <input type="number" class="form-control" id="age">
+                      </div>
+                    <button type="submit" class="btn mt-5 shadow col-lg-3" id="send">Envoyer</button>
+                  </form>
+                </div>
+            </div>
         </main>
 
         <!-- Partie footer -->
