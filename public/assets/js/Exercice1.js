@@ -11,19 +11,21 @@ function changeColorInput (event) {
 
     if (passwordSelect.value == confirmPasswordSelect.value) {
         for (let password of passwordsSelect) {
+            password.classList.remove('wrong');
             password.classList.add('good');
-          }
+        }
     } else {
         for (let password of passwordsSelect) {
+            password.classList.remove('good');
             password.classList.add('wrong');
-          }  
+        }  
     }
     event.preventDefault();
 }
 
 
 // Déclaration de l'évènement
-btnSelect.addEventListener('submit', changeColorInput);
+btnSelect.addEventListener('click', changeColorInput);
 
 
 

@@ -15,10 +15,15 @@ nav {
     border-color: #6e6964;
 }
 
-
 a:hover {
-    color: #f39a9d !important; 
-} 
+    color: #f39a9d !important;
+    transition: 1s;
+    
+}
+
+/* .linkColor {
+    background-color: red !important;
+} */
 
 .welcome {
     background-color: #f39a9d;
@@ -33,26 +38,43 @@ a:hover {
     border-bottom: double;
     border-color: #f1f1e7;
     border-width: 10px;
+    opacity: 0.9;
 }
 
 .answerExo {
     background-color: #f1f1e7;
+    border-style: dashed;
+    border-color: #f39a9d;
+    border-width: 5px;
 }
 
+.bonus {
+    background-color: #f39a9d;
+    border-style: dotted;
+    border-color: #f1f1e7;
+}
 
 
 h1, h2 {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    
 }
 
 input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
     border-color: #f39a9d;
     box-shadow: 0 0 7px #f39a9d;
+    
 }
 
 #send {
     background-color: #f39a9d;
+    transition: 1.5s;
+}
+
+#send:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
 }
 
 
@@ -68,7 +90,6 @@ input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, in
     border-color:  red;
     box-shadow: 0 0 7px red;
 }
-
 
 .error::after {
     content: "Le champ n'est pas complété correctement";
