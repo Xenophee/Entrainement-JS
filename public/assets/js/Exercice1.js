@@ -7,7 +7,7 @@ let btnSelect = document.getElementById('send');
 
 
 // Déclaration de la fonction
-function changeBackgroundInput (event) {
+function changeColorInput (event) {
 
     if (passwordSelect.value == confirmPasswordSelect.value) {
         for (let password of passwordsSelect) {
@@ -23,7 +23,13 @@ function changeBackgroundInput (event) {
 
 
 // Déclaration de l'évènement
-btnSelect.addEventListener('click', changeBackgroundInput);
+btnSelect.addEventListener('submit', changeColorInput);
+
+
+
+
+
+
 
 
 
