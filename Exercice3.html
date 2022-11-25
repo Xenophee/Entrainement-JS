@@ -51,8 +51,8 @@
                 <p>En utilisant le formulaire créé à l'exercice 2, donner la possibilité à l'utilisateur d'entrer plusieurs prénoms en clonant le champs.</p>
             </div>
 
-            <div class="row d-flex justify-content-center py-5">
-                <div class="answerExo col-9 col-lg-6 py-5 px-5 shadow-lg" id='bruh'>
+            <div class="row d-flex justify-content-around py-5">
+                <div class="answerExo col-9 col-lg-6 py-5 px-5 shadow-lg">
                     <h2 class="text-center pb-5">Formulaire</h2>
                     <!-- formulaire  -->
                 <form class="row d-flex justify-content-center">
@@ -61,11 +61,12 @@
                       <input type="text" class="form-control" id="lastname">
                       <div id="lastnameError"></div>
                     </div>
-                    <div class="mb-3">
-                        <label for="firstname" class="form-label">Prénom :</label>
+                    <div class="mb-3" id="firstnameField">
+                        <label for="firstname" class="form-label">Prénom(s) :</label>
                         <input type="text" class="form-control" id="firstname">
-                        <div id="firstnameError"></div>
+                        <div id="firstnameError"></div>           
                       </div>
+                      <button type="button" class="col-2 btn mb-3" id="more">+</button>
                       <div class="mb-3">
                         <label for="email" class="form-label">Email :</label>
                         <input type="email" class="form-control" id="email">
