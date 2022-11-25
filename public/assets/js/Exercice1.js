@@ -9,6 +9,8 @@ let btnSelect = document.getElementById('send');
 // Déclaration de la fonction
 function changeColorInput (event) {
 
+    event.preventDefault();
+    // On peut retirer les deux classes directement ici si on n'utilise pas de boucle après
     if (passwordSelect.value == confirmPasswordSelect.value) {
         for (let password of passwordsSelect) {
             password.classList.remove('wrong');
@@ -20,12 +22,12 @@ function changeColorInput (event) {
             password.classList.add('wrong');
         }  
     }
-    event.preventDefault();
 }
 
 
 // Déclaration de l'évènement
 btnSelect.addEventListener('click', changeColorInput);
+    // On peut utiliser l'event 'blur' aussi si on veut vérifier avant de cliquer sur le bouton
 
 
 

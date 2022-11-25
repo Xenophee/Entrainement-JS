@@ -58,3 +58,5 @@ function verification (event) {
 
 // Déclaration de l'évènement
 btnSelect.addEventListener('click', verification);
+
+// --> refaire en mettant un event sur chaque input avec 'change' et utiliser les classes CSS pour rendre visible ou non
