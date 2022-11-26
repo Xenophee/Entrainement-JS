@@ -1,22 +1,19 @@
-
-// Déclaration des variables
-let btnSelect = document.getElementById('send');
-
-let noteOne = document.getElementById('noteOne');
-let noteTwo = document.getElementById('noteTwo');
-let noteThree = document.getElementById('noteThree');
-let noteFour = document.getElementById('noteFour');
-let noteFive = document.getElementById('noteFive');
-
-let resultSelect = document.getElementById('result');
-
-
 // Déclaration de la fonction
 function averageCalc (event) {
-    let addition = Number(noteOne.value) + Number(noteTwo.value) + Number(noteThree.value) + Number(noteFour.value) + Number(noteFive.value);
-    let average = addition/5;
-    event.preventDefault();
 
+    event.preventDefault();
+    let addition2 = 0;
+
+    // On fait une boucle pour additionner toutes les notes
+    inputSelect.forEach(element => {
+        addition2 = addition2 + Number(element.value);
+    });
+
+    // On divise tout ça par le nombre d'input
+    let average = addition2 / inputSelect.length;
+
+
+    // Message particulier à l'utilisateur pour la moyenne donnée
     if (average > 20) {
         resultSelect.textContent = `La moyenne de l'élève est de ${average}. C'était Dieu ? Ou c'est juste du troll ? Petit con !`
     } else if (average >= 15) {
@@ -31,28 +28,12 @@ function averageCalc (event) {
 }
 
 
+// Déclaration des variables
+let inputSelect = document.querySelectorAll('input[type=number]');
+let btnSelect = document.getElementById('send');
+
+let resultSelect = document.getElementById('result');
+
+
 // Déclaration de l'évènement
 btnSelect.addEventListener('click', averageCalc);
-
-
-
-
-
-
-
-
-
-
-
-
-// let inputNumber = document.querySelectorAll('input[type=number]');
-
-
-// console.log(inputNumber)
-
-// btnSelect.addEventListener('click', (event) => {
-//     inputNumber.forEach(element => {
-//         console.log(element.value);
-//         event.preventDefault();
-//     })
-// })

@@ -15,7 +15,7 @@
         <header class="text-center">
             <nav class="navbar fixed-top navbar-expand-lg shadow-lg">
                 <div class="container-fluid">
-                <a class="navbar-brand fs-4" href="./index.html">Entrainement-JS</a>
+                <a class="navbar-brand fs-4" href="./index.html" id="mainLink">Entrainement-JS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +37,6 @@
                         <a class="nav-link" href="./Exercice5.html">Exercice 5</a>
                     </li>
                     </ul>
-                    
                 </div>
                 </div>
             </nav>
@@ -46,42 +45,78 @@
         <!-- Partie main -->
         <div class="container-fluid">
         <main>
+            <!-- Enoncé de l'exercice -->
             <div class="exo row d-flex justify-content-center my-5 py-5 text-center shadow-lg">
-                
                 <h1 class="mb-5">Exercice 4</h1>
                     <p>Demander à l'aide d'un formulaire les 5 dernières notes d'un élève.</p>
                     <p>Calculer sa moyenne et l'afficher à l'écran avec une appréciation.</p>
             </div>
-
-            <div class="row d-flex justify-content-center py-5">
-                <div class="answerExo col-11 col-md-9 col-lg-6 py-5 px-5 shadow-lg" id='bruh'>
+            
+            <!-- Mise en page de l'exercice -->
+            <div class="formNote row d-flex justify-content-center align-items-end mx-5 my-5">
+                <div class="col d-flex justify-content-end me-3">
+                    <img src="./public/assets/img/pngegg1.png" alt="arabesque-gauche" class="img-fluid">
+                </div>
+                <div class="answerExo col-11 col-md-9 col-lg-2 py-5 px-5 shadow-lg" id='bruh'>
                     <h2 class="text-center pb-5">Formulaire</h2>
                     <!-- formulaire  -->
-                <form class="row d-flex justify-content-center">
-                    <div class="mb-3">
-                      <label for="noteOne" class="form-label">Première note:</label>
-                      <input type="number" class="form-control" id="noteOne">
-                    </div>
-                    <div class="mb-3">
-                        <label for="noteTwo" class="form-label">Deuxième note :</label>
-                        <input type="number" class="form-control" id="noteTwo">
-                      </div>
-                      <div class="mb-3">
-                        <label for="noteThree" class="form-label">Troisième note :</label>
-                        <input type="number" class="form-control" id="noteThree">
-                      </div>
-                      <div class="mb-3">
-                        <label for="noteFour" class="form-label">Quatrième note :</label>
-                        <input type="number" class="form-control" id="noteFour">
-                      </div>
-                      <div class="mb-3">
-                        <label for="noteFive" class="form-label">Cinquième note :</label>
-                        <input type="number" class="form-control" id="noteFive">
-                      </div>
-                    <button type="submit" class="btn mt-5 shadow col-lg-3" id="send">Envoyer</button>
-                  </form>
+                    <form class="row d-flex justify-content-center">
+                        <div class="col">
+
+                            <!-- 1eme note -->
+                            <div class="row d-flex justify-content-center text-center mb-4">
+                                <label for="noteOne" class="form-label">Première note :</label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="noteOne" class="text-center form-control" id="noteOne">
+                                </div>
+                            </div>
+
+                            <!-- 2eme note -->
+                            <div class="row d-flex justify-content-center text-center mb-4">
+                                <label for="noteTwo" class="form-label">Deuxième note :</label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="noteTwo" class="text-center form-control" id="noteTwo">
+                                </div>
+                            </div>
+
+                            <!-- 3eme note -->
+                            <div class="row d-flex justify-content-center text-center mb-4">
+                                <label for="noteThree" class="form-label">Troisième note :</label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="noteThree" class="text-center form-control" id="noteThree">
+                                </div>
+                            </div>
+
+                            <!-- 4eme note -->
+                            <div class="row d-flex justify-content-center text-center mb-4">
+                                <label for="noteFour" class="form-label">Quatrième note :</label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="noteFour" class="text-center form-control" id="noteFour">
+                                </div>
+                            </div>
+
+                            <!-- 5eme note -->
+                            <div class="row d-flex justify-content-center text-center mb-4">
+                                <label for="noteFive" class="form-label">Cinquième note :</label>
+                                <div class="col-lg-6">
+                                    <input type="number" name="noteFive" class="text-center form-control" id="noteFive">
+                                </div>
+                            </div>
+
+                            <!-- Le bouton de validation -->
+                            <div class="row d-flex justify-content-center mb-1 mt-5">
+                                <button type="submit" class="btn col-md-6 col-lg-9 shadow" id="send">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+                <div class="col ms-3">
+                    <img src="./public/assets/img/pngegg.png" alt="arabesque-droite" class="img-fluid">
+                </div>
+                
             </div>
+
+            <!-- Partie qui affiche le résultat -->
             <div class="row d-flex justify-content-center text-center mb-5">
                 <div class="bonus col-md-6 col-lg-4 py-4 shadow">
                     <h2 class="mb-4">Résultat :</h2>

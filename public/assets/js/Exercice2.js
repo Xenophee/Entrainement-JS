@@ -25,30 +25,30 @@ function verification (event) {
 
     // Test sur le nom
     if (!RegLettres.test(lastnameSelect.value)) {
-        lastnameSelectError.classList.add('error')
+        lastnameSelectError.classList.remove('d-none')
     } else {
-        lastnameSelectError.classList.remove('error')
+        lastnameSelectError.classList.add('d-none')
     }
     
     // Test sur le prénom
     if (!RegLettres.test(firstnameSelect.value)) {
-        firstnameSelectError.classList.add('error')
+        firstnameSelectError.classList.remove('d-none')
     } else {
-        firstnameSelectError.classList.remove('error')
+        firstnameSelectError.classList.add('d-none')
     }
 
     // Test sur l'email
     if (!RegMail.test(emailSelect.value)) {
-        emailSelectError.classList.add('error')
+        emailSelectError.classList.remove('d-none')
     } else {
-        emailSelectError.classList.remove('error')
+        emailSelectError.classList.add('d-none')
     }
 
     // Test sur l'âge
     if (!RegNum.test(ageSelect.value)) {
-        ageSelectError.classList.add('error')
+        ageSelectError.classList.remove('d-none')
     } else {
-        ageSelectError.classList.remove('error')
+        ageSelectError.classList.add('d-none')
     }
 
     // On empêche l'envoi du formulaire
@@ -58,5 +58,3 @@ function verification (event) {
 
 // Déclaration de l'évènement
 btnSelect.addEventListener('click', verification);
-
-// --> refaire en mettant un event sur chaque input avec 'change' et utiliser les classes CSS pour rendre visible ou non

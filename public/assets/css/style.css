@@ -13,17 +13,30 @@ nav {
     border-bottom-style : double;
     border-bottom-width: 10px;
     border-color: #6e6964;
+    
 }
+
+#mainLink {
+    color : #f39a9d;
+    
+}
+
 
 a:hover {
     color: #f39a9d !important;
     transition: 1s;
-    
 }
 
-/* .linkColor {
-    background-color: red !important;
-} */
+img:hover {
+    filter: grayscale(0%);
+    transition: 1.5s;
+}
+
+
+img {
+    filter: grayscale(100%);
+    transition: 1.5s;
+}
 
 .welcome {
     background-color: #f39a9d;
@@ -54,6 +67,20 @@ a:hover {
     border-color: #f1f1e7;
 }
 
+.formNote {
+    background-color: #f1f1e7;
+
+}
+
+#addImg {
+    background-color: #6e6964;
+    border-style:groove;
+    border-width: 15px;
+    border-color: #f39a9d;
+    overflow-y: scroll;
+    min-height: 100vh;
+}
+
 
 h1, h2 {
     font-family: 'Dancing Script', cursive;
@@ -64,7 +91,12 @@ h1, h2 {
 input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
     border-color: #f39a9d;
     box-shadow: 0 0 7px #f39a9d;
-    
+}
+
+input[type=password], input[type=text], input[type=number], input[type=email] {
+    box-shadow: inset 0 0 10px #d5d3d2;
+    border-style: double;
+    border-width: 5px;
 }
 
 #send {
@@ -88,7 +120,9 @@ input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, in
     transition: 1.5s;
 }
 
-
+.nav-link:focus {
+    background-color: #f39a9d !important;
+}
 
 /* Classes spécifiques d'exercices */
 
@@ -102,23 +136,7 @@ input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, in
     box-shadow: 0 0 7px red;
 }
 
-.error::after {
-    content: "Le champ n'est pas complété correctement";
-    color:red;
-}
 
-#addImg {
-    background-color: #6e6964;
-    overflow-y: scroll;
-    min-height: 100vh;
 
-}
 
-.adding {
-    background-color: #f48585;
-    border-style: double;
-    border-width: 10px;
-    border-color: #f1f1e7;;
-    height: 50vh;
-    width: 20vw;
-}
+

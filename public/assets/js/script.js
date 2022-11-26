@@ -2,10 +2,17 @@
 
 // console.log(navSelect)
 
+// function activation () {
+//     navSelect.forEach(element => {
+//         element.addEventListener('click', (element) => {
+//             console.log(element);
+//             element.classList.add('linkColor')
+//         })
+//     });
+// }
 
-// navSelect.forEach(element => {
-//     element.addEventListener('click', (element) => {
-//         console.log(element);
-//         element.classList.add('linkColor')
-//     })
-// });
+
+
+
+// // Déclaration de l'évènement
+// navSelect.addEventListener('click', activation);
