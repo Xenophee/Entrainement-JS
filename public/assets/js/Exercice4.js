@@ -15,15 +15,15 @@ function averageCalc (event) {
 
     // Message particulier à l'utilisateur pour la moyenne donnée
     if (average > 20) {
-        resultSelect.textContent = `La moyenne de l'élève est de ${average}. C'était Dieu ? Ou c'est juste du troll ? Petit con !`
+        resultSelect.textContent = `La moyenne de l'élève est de ${average} /20. C'était Dieu ? Ou c'est juste du troll ? Bouffon !`
     } else if (average >= 15) {
-        resultSelect.textContent = `Félicitation ! La moyenne de l'élève est de ${average}. On tient notre futur Montaigne !`;
+        resultSelect.textContent = `Félicitation ! La moyenne de l'élève est de ${average} /20. On tient notre futur Montaigne !`;
     } else if (average <15 && average >= 12) {
-        resultSelect.textContent = `La moyenne de l'élève est de ${average}. Il n'y aura pas de hontoscope à Noël, l'honneur est sauf !`;
+        resultSelect.textContent = `La moyenne de l'élève est de ${average}/20. Il n'y aura pas de hontoscope à Noël, l'honneur est sauf !`;
     } else if (average <12 && average >=10) {
-        resultSelect.textContent = `La moyenne de l'élève est de ${average}. Va falloir faire mieux ou un petit tour chez Brigitte va s'imposer !`;
+        resultSelect.textContent = `La moyenne de l'élève est de ${average}/20. Va falloir faire mieux ou un petit tour chez Brigitte va s'imposer !`;
     } else {
-        resultSelect.textContent = `La moyenne de l'élève est de ${average}. Au gnouf !`;
+        resultSelect.textContent = `La moyenne de l'élève est de ${average}/20. Au gnouf !`;
     }
 }
 

@@ -21,22 +21,13 @@ nav {
     
 }
 
-
 a:hover {
     color: #f39a9d !important;
     transition: 1s;
 }
 
-img:hover {
-    filter: grayscale(0%);
-    transition: 1.5s;
-}
 
-
-img {
-    filter: grayscale(100%);
-    transition: 1.5s;
-}
+/* Style pour les gros blocs */
 
 .welcome {
     background-color: #f39a9d;
@@ -69,12 +60,14 @@ img {
 
 .formNote {
     background-color: #f1f1e7;
-
+    border-style: solid;
+    border-width: 10px;
+    border-color: #f39a9d;
 }
 
 #addImg {
-    background-color: #6e6964;
-    border-style:groove;
+    background-color: #6e6963;
+    border-style: double;
     border-width: 15px;
     border-color: #f39a9d;
     overflow-y: scroll;
@@ -82,11 +75,22 @@ img {
 }
 
 
+/* Style pour des éléments plus précis */
+
 h1, h2 {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     
 }
+
+#titleForm {
+    border-width: 20px;
+    border-bottom: dashed;
+    border-top: dashed;
+}
+
+
+/* Style sur les inputs */
 
 input[type=password]:focus, input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
     border-color: #f39a9d;
@@ -98,6 +102,23 @@ input[type=password], input[type=text], input[type=number], input[type=email] {
     border-style: double;
     border-width: 5px;
 }
+
+    /* ----------------------------------------------- */
+
+    /* Pour retirer le flèche sur un input type number */
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    /* ----------------------------------------------- */
+
+
+    /* Style sur les boutons */
 
 #send {
     background-color: #f39a9d;
@@ -120,23 +141,18 @@ input[type=password], input[type=text], input[type=number], input[type=email] {
     transition: 1.5s;
 }
 
-.nav-link:focus {
-    background-color: #f39a9d !important;
+
+    /* Style sur les images */
+
+img:hover {
+    filter: grayscale(0%);
+    transition: 1.5s;
 }
 
-/* Classes spécifiques d'exercices */
-
-.good {
-    border-color:  green;
-    box-shadow: 0 0 7px green;
+img {
+    filter: grayscale(100%);
+    transition: 1.5s;
 }
-
-.wrong {
-    border-color:  red;
-    box-shadow: 0 0 7px red;
-}
-
-
 
 
 

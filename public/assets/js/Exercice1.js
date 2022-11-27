@@ -13,13 +13,13 @@ function changeColorInput (event) {
     // On peut retirer les deux classes directement ici si on n'utilise pas de boucle après
     if (passwordSelect.value == confirmPasswordSelect.value) {
         for (let password of passwordsSelect) {
-            password.classList.remove('wrong');
-            password.classList.add('good');
+            password.classList.remove('border-danger');
+            password.classList.add('border-success');
         }
     } else {
         for (let password of passwordsSelect) {
-            password.classList.remove('good');
-            password.classList.add('wrong');
+            password.classList.remove('border-success');
+            password.classList.add('border-danger');
         }  
     }
 }
@@ -33,25 +33,9 @@ btnSelect.addEventListener('click', changeColorInput);
 
 
 
-
-
-
-
-
-
-
-// let passwordsSelect = document.querySelectorAll('input[type=password]');
-
-
-// passwordsSelect.forEach((input) => {
-//     console.log(input)
-//     btnSelect.addEventListener('click', (event) => {
-//         if (input.value == input.value) {
-//             input.classList.add('good')
-//             console.log(input.value)
-//         } else {
-//             input.classList.add('wrong')
-//         }
-//         event.preventDefault();
-//     })
-// });
+    // A la place de la boucle For, on peut faire un forEach ou juste reprendre les id des différents inputs
+    
+    /* passwordsSelect.forEach(element => {
+        element.classList.remove('border-danger');
+        element.classList.add('border-success');
+    }); */
