@@ -12,18 +12,24 @@ nav {
     background-color: #f1f1e7;
     border-bottom-style : double;
     border-bottom-width: 10px;
-    border-color: #6e6964;
-    
+    border-color: #6e6964;  
 }
 
 #mainLink {
-    color : #f39a9d;
-    
+    color : #f39a9d; 
 }
 
 a:hover {
     color: #f39a9d !important;
     transition: 1s;
+}
+
+.navbar-nav > .active > a { 
+    color: #f39a9d ;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px pink;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 8px;
 }
 
 
@@ -70,7 +76,6 @@ a:hover {
     border-style: double;
     border-width: 15px;
     border-color: #f39a9d;
-    overflow-y: scroll;
     min-height: 100vh;
 }
 

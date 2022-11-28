@@ -2,15 +2,17 @@
 function averageCalc (event) {
 
     event.preventDefault();
-    let addition2 = 0;
+    let addition = 0;
 
     // On fait une boucle pour additionner toutes les notes
     inputSelect.forEach(element => {
-        addition2 = addition2 + Number(element.value);
+        addition = addition + Number(element.value);
+        /* On peut l'écrire également comme cela
+        addition += Number(element.value); */
     });
 
     // On divise tout ça par le nombre d'input
-    let average = addition2 / inputSelect.length;
+    let average = addition / inputSelect.length;
 
 
     // Message particulier à l'utilisateur pour la moyenne donnée

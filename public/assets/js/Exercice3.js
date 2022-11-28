@@ -3,10 +3,10 @@ function duplic () {
     count++
     let divNode = document.createElement('div');
     let clone = document.getElementById("firstname").cloneNode(true);
+    // Le true ou false détermine si on clone également les enfants
     clone.id = 'firstname' + count;
     clone.name = 'firstname' + count;
     clone.classList.add('mt-3');
-    // let cloneLabel = document.getElementById
     divNode.appendChild(clone);
     document.getElementById('firstnameField').appendChild(divNode);
 }
